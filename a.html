@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Groq Chat</title>
+  <link rel="icon" type="image/png" href="https://www.shutterstock.com/image-vector/chat-bot-icon-virtual-smart-600nw-2478937555.jpg">
+  <link rel="stylesheet" href="a.css">
+</head>
+<body>
+  <div id="loader-overlay">
+    <div id="loader-box">
+      <div id="loader-label">Testing AI models...</div>
+      <div id="loader-bar-bg">
+        <div id="loader-bar"></div>
+      </div>
+      <div id="loader-percent">0%</div>
+    </div>
+  </div>
+  <div id="popup"></div>
+  <div id="topbar-model">
+    <label for="modelSelect">Model:</label>
+    <select id="modelSelect" disabled><option>Loading...</option></select>
+  </div>
+  <div id="chatContainer">
+    <div id="chat"></div>
+    <div id="inputArea">
+      <textarea id="userInput" placeholder="Type a message..."></textarea>
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+  <script src="a.js"></script>
+</body>
+</html>
